@@ -29,4 +29,6 @@ urlpatterns = [
 
         # раздел администратора
         path("admin/", admin.site.urls),
+
+        path('group/', include('posts.urls')),
 ]
