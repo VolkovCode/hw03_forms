@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from .models import Post, Group
+from .models import Post
 
 
 class PostForm(ModelForm):
@@ -7,7 +7,7 @@ class PostForm(ModelForm):
         model = Post
         fields = ['group', 'text']
         labels = {
-        'group': "Группа",
-        'text': 'Текс записи',
-    }
+            'group': "Группа",
+            'text': 'Текс записи',
+        }
  
